@@ -9,16 +9,16 @@ const Console = forwardRef((props, ref) => {
             setCapsules(res.data);
         })
     }
-
+    
     useImperativeHandle(ref, () => ({
         getCapsules() {
             getAllCaps();
         }
 
     }));
-
+    const details = (props.launchPadDetail.data || capsules)
     return (
-        <div><pre>{JSON.stringify(capsules, null, 2)}</pre></div>
+        <div><pre>{JSON.stringify(details, null, 2)}</pre></div>
     )
 });
 
