@@ -1,0 +1,34 @@
+/* Styles go here */
+
+.row {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 500px;
+    flex: 1;
+    overflow: auto;
+    border: 20px solid #003366;
+}
+ .row > scrollable-otp {
+     overflow-y: overflow-wrap;
+  }
+
+  .row-panel {
+      display: flex;
+      justify-content: space-around;
+  }
+  .row-panel > .col {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 10px;
+    padding: 10px;
+    border: 20px solid aliceblue;
+    align-items: center;
+  }
+  .row-panel > .col > button {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+  }
+
+  
